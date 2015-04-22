@@ -52,7 +52,7 @@ with open(output_file, "w") as csv_output:
         www_create_msg = None
         
         # Try to create the zone
-        zone_create_response = c.create_primary_zone(username, check_trailing_dot(zone))
+        zone_create_response = c.create_primary_zone(account_name, check_trailing_dot(zone))
         print json.dumps(zone_create_response)
         if isinstance(zone_create_response, list) and zone_create_response[0]['errorMessage']:
             zone_create_msg = zone_create_response[0]['errorMessage']
