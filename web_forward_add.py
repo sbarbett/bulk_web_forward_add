@@ -1,7 +1,7 @@
 import csv, ultra_rest_client, json, sys, time
 
 if len(sys.argv) == 2 and sys.argv[1].lower() == "help":
-    sys.exit("Expected use: python web_forward_add.py username password example.csv [use_http host:port]\nArgument 1:\n\tweb_forward_mod.py -- The name of your python file\nArgument 2:\n\tusername -- Username of the UltraDNS account\nArgument 3:\n\tpassword -- UltraDNS account password\nArgument 4:\n\taccount_name -- The name of your UltraDNS account\nArguments 5 and 6 (optional):\n\tuse_http -- Specify this value as 'True' if you wish to use a test environment\n\thost:port -- The hostname and port of your test environment (Example: test-restapi.ultradns.com:443)\n")
+    sys.exit("Expected use: python web_forward_add.py username password account_name example.csv [use_http host:port]\nArgument 1:\n\tweb_forward_mod.py -- The name of your python file\nArgument 2:\n\tusername -- Username of the UltraDNS account\nArgument 3:\n\tpassword -- UltraDNS account password\nArgument 4:\n\taccount_name -- The name of your UltraDNS account\nArguments 5 and 6 (optional):\n\tuse_http -- Specify this value as 'True' if you wish to use a test environment\n\thost:port -- The hostname and port of your test environment (Example: test-restapi.ultradns.com:443)\n")
     
 if len(sys.argv) != 7 and len(sys.argv) != 5:
     raise Exception("Expected use: python web_forward_mod.py username password account_name example.csv [use_http host:port]\n\nType 'python web_forward_mod.py help' for more information.\n")

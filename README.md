@@ -1,11 +1,11 @@
 bulk_web_forward_add
 ======================
 
-This is an example script that will add both apex and www 301 redirects for a specified zone to a chosen destination in UltraDNS. The input is through a CSV file as shown in test.csv. This script requires the [UltraDNS REST API Client](https://github.com/ultradns/python_rest_api_client) library.
+This is an example script that will add both apex and www 301 redirects for a specified zone to a chosen destination in UltraDNS. The input is through a CSV file as shown in example.csv. This script requires the [UltraDNS REST API Client](https://github.com/ultradns/python_rest_api_client) library.
 
 ```
 $ python web_forward_add.py help
-Expected use: python web_forward_add.py username password example.csv [use_http host:port]
+Expected use: python web_forward_add.py username password account_name example.csv [use_http host:port]
 Argument 1:
         web_forward_mod.py -- The name of your python file
 Argument 2:
